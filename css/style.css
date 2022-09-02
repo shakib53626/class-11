@@ -1,0 +1,577 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.card-area a{
+    text-decoration: none;
+    display: block;
+}
+.navbar{
+    padding: 20px 0;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+    color: red !important;
+}
+.nav-link{
+    font-size: 18px;
+    color: blue !important;
+    transition: 0.5s;
+    text-align: center !important;
+}
+.nav-link:hover{
+    color: #fe5c24 !important;
+    transition:0.5s;
+}
+.active{
+    color: #fe5c24 !important;
+}
+
+.pre-section{
+    background:linear-gradient(135deg, #8052ec, #086e34);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.preloader{
+    box-shadow: rgba(212, 105, 6, 0.8) 0px 7px 29px 0px;
+    padding: 40px;
+    background-color: #fff;
+    
+}
+.preloader h1{
+    font-weight: bold;
+}
+.preloader p{
+    line-height: 1.9;
+}
+.preloader button{
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.preloader button:focus{
+    outline: none;
+}
+
+
+.modal-1{
+    position: absolute;
+    width: 100%;
+    height: 110vh;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.modal-area{
+    background:linear-gradient(135deg,#1a0842, #09444e);
+    border: 4px solid rgb(4, 151, 236);
+    border-radius: 8px;
+    height: auto;
+    margin-top: 150px;
+    padding: 100px;
+    
+}
+.card-area{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-area h1{
+    color: #fff;
+    font-weight: bold;
+    margin: 50px 0 100px 0;
+    text-align: center;
+}
+.card-1{
+    width: 100px;
+    color: white;
+    background-color: #212529;
+    border: 3px solid #2E94E3;
+    border-radius: 8px;
+    height: 150px;
+    justify-content: center;
+    box-shadow: 0 0 30px #2E94E3;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card-1:hover{
+    background: #2E94E3;
+}
+.modal-content{
+    background: none;
+    border: none;
+}
+.close{
+    position: absolute;
+    font-weight: bold;
+    color: red;
+    background: none;
+    border: none;
+    font-size: 24px;
+    top: 180px;
+    right: 340px;
+}
+
+
+/* ****************************************************************************************
+*******************************************************************************************
+                            Preloader Css Coad Start
+******************************************************************************************
+****************************************************************************************** */
+.section-1{
+    padding-top: 80px;
+    background:linear-gradient(135deg, rgb(37, 3, 229), rgb(255, 0, 255));
+}
+.preloader-1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.preloader-area{
+    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.preloader-area span{
+    text-align: center;
+    position: absolute;
+}
+.load-content{
+    width: 80px;
+    height: 80px;
+    border-top: 3px solid red;
+    border-left: 3px solid red;
+    border-radius: 100%;
+
+    animation: loading 1s linear infinite;
+}
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+    100%{
+        transform: rotate(360deg);
+        transition: 0.5s;
+    }
+}
+
+
+
+.load-content1{
+    width: 80px;
+    height: 80px;
+    border-top: 3px solid red;
+    border-left: 3px solid red;
+    border-radius: 100%;
+    transform: rotate(100deg);
+
+    animation: loading1 2s linear infinite;
+}
+.load-content2{
+    width: 70px;
+    height: 70px;
+    border-top: 3px solid blue;
+    border-left: 3px solid blue;
+
+    border-radius: 100%;
+    position: absolute;
+
+    animation: loading2 2s linear infinite;
+}
+.load-content3{
+    width: 90px;
+    height: 90px;
+    border-top: 3px solid green;
+    border-left: 3px solid green;
+    transform: rotate(230deg);
+    border-radius: 100%;
+    position: absolute;
+
+    animation: loading2 2s linear infinite;
+}
+
+@keyframes loading1{
+    0%{
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+    100%{
+        transform: rotate(360deg);
+        transition: 0.5s;
+    }
+}
+
+@keyframes loading2{
+    0%{
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+    100%{
+        transform: rotate(-360deg);
+        transition: 0.5s;
+    }
+}
+@keyframes loading3{
+    0%{
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+    100%{
+        transform: rotate(-360deg);
+        transition: 0.5s;
+    }
+}
+
+.load-content4{
+    width: 80px;
+    height: 80px;
+    border-top: 8px solid red;
+    border-bottom: 8px solid green;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    position: relative;
+    
+    
+    /* transform: rotate(180deg); */
+
+    animation: loading1 2s linear infinite;
+}
+.load-content4::after{
+    content: '';
+    position: absolute;
+    top: -6px;
+    width: 80px;
+    height: 80px;
+    border-top: 8px solid red;
+    border-bottom: 8px solid green;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    transform: rotate(90deg);
+    
+    
+    /* transform: rotate(180deg); */
+
+    animation: loading1 2s linear;
+}
+.load-content5{
+    width: 75px;
+    height: 75px;
+    border: 20px dotted red;
+    border-radius: 100%;
+    
+    
+
+    animation: loading1 2s linear infinite;
+}
+
+/* ****************************************************************************************
+*******************************************************************************************
+                            Preloader Css Coad End
+******************************************************************************************
+****************************************************************************************** */
+
+/* ****************************************************************************************
+*******************************************************************************************
+                            Calculator Css Coad Start
+******************************************************************************************
+****************************************************************************************** */
+
+.section-2{
+    background:linear-gradient(135deg, rgb(4, 60, 106), rgb(85, 85, 7), rgb(4, 58, 4));
+    height: 100vh;
+    padding-top: 150px;
+}
+
+.calculator{
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    background-color: rgb(225, 245, 249);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#display{
+    width: 90%;
+    height: 60px;
+    display: block;
+    margin: auto;
+    text-align: right;
+    font-size: 24px;
+    padding: 10px;
+    border: 5px solid #d3d5d3;
+    margin-bottom: 30px;
+    background: white;
+}
+#display:focus{
+    outline: none;
+}
+.btn11{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.btn11 input{
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    display: block;
+    border-radius: 5px;
+    background-color: rgb(247, 162, 247);
+}
+.btn11 input:hover{
+    background: none !important;
+    color: black !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+
+
+/* ****************************************************************************************
+*******************************************************************************************
+                            Calculator Css Coad End
+******************************************************************************************
+****************************************************************************************** */
+
+
+/* ****************************************************************************************
+*******************************************************************************************
+                        Increment/Decriment Css Coad Start
+******************************************************************************************
+****************************************************************************************** */
+
+.section-3{
+    background:linear-gradient(135deg, rgb(90, 18, 18), rgb(11, 11, 226), rgb(95, 95, 24), rgb(10, 61, 10));
+    height: 100vh;
+    padding-top: 400px;
+}
+.in-area{
+    border: 3px solid #2E94E3;
+    width: 400px;
+    border-radius: 8px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background: #212529;
+    box-shadow: 0 0 30px #2E94E3;
+
+}
+.in-area h1{
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+}
+.in-area p{
+    background-color: yellow;
+    padding: 15px;
+    border-radius: 15px;
+    width: 300px;
+    margin: auto;
+    border: 3px solid gray;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.in-area button{
+    background: none;
+    color: #fff;
+    border: 1px solid #2E94E3;
+    padding: 8px 20px;
+    margin: 5px;
+    border-radius: 30px;
+
+}
+.in-area button:hover{
+    background-color: #2E94E3;
+}
+#hid{
+    position:absolute;
+    top: 280px;
+    left: 800px;
+    font-size:30px;
+    font-weight:bold;
+    color: red;
+}
+
+/* ****************************************************************************************
+*******************************************************************************************
+                        Increment/Decriment Css Coad End
+******************************************************************************************
+****************************************************************************************** */
+
+/* ****************************************************************************************
+*******************************************************************************************
+                        Love Calculator Css Coad Start
+******************************************************************************************
+****************************************************************************************** */
+.section-4{
+    background:linear-gradient(135deg,skyblue, #FFC0CB);
+    padding-top: 300px;
+    height: 90vh;
+}
+.love-area{
+    padding: 40px;
+    box-shadow: #71444c 10px 10px 24px 0px inset, #803341 -10px -10px 6px 1px inset;
+    width: 700px;
+    margin: auto;
+    border-radius: 20px;
+}
+.love-area i{
+    font-size: 60px;
+    color: red;
+}
+.love-area h3{
+    text-transform:uppercase;
+    font-weight: bold;
+    color: #D8395E;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.love-area input{
+    border: 3px solid #D8395E;
+    margin:0 5px;
+    padding: 5px 12px;
+    text-transform:uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #D8395E;
+}
+.love-area form input:focus{
+    outline: none;
+}
+#calculat{
+        display: block;
+        margin: auto;
+        background-color: #D6365C;
+        border: none;
+        color: white;
+        padding: 12px 60px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 18px;
+}
+.re-result{
+    width: 400px;
+    text-align: center;
+    background-color: #D6365C;
+    color: #fff;
+    border: none;
+    padding: 8px 50px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+#lovecoment{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* ****************************************************************************************
+*******************************************************************************************
+                        Love Calculator Css Coad End
+******************************************************************************************
+****************************************************************************************** */
+
+/* ****************************************************************************************
+*******************************************************************************************
+                        Digital Watch Css Coad Start
+******************************************************************************************
+****************************************************************************************** */
+
+
+
+.section6{
+    background:linear-gradient(135deg, #1a0842, #09444e);
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.clock-area{
+    width: 500px;
+    border:1px solid #2E94E3;
+    box-shadow: 0 0 30px #2E94E3;
+    padding: 20px 30px;
+    margin: auto;
+    border-radius: 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 0.01));
+    
+}
+.clock-area:hover{
+    background: #2E94E3;
+}
+.date{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.time{
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+
+}
+
+/* ****************************************************************************************
+*******************************************************************************************
+                        Digital Watch Css Coad End
+******************************************************************************************
+****************************************************************************************** */
+/* ****************************************************************************************
+*******************************************************************************************
+                        Game Css Coad Start
+******************************************************************************************
+****************************************************************************************** */
+
+
+.section5{
+    background:linear-gradient(135deg, #8052ec, #d161ff);
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 330px;
+    margin: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.button-option{
+    background-color: #ffffff;
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+    font-size: 60px;
+    font-weight: 600;
+    color: #D6365C;
+    text-transform: uppercase;
+}
